@@ -1,5 +1,5 @@
 .projects-section {
-  padding: 80px 10%;
+  padding: 6rem 10%;
   background: linear-gradient(to right, #1f1f1f, #2b2b2b);
 }
 
@@ -145,14 +145,44 @@
   font-weight: 300;
 }
 
+@media (max-width: 1200px) {
+  .projects-section {
+    padding: 100px 5%;
+  }
+  
+  .image-container {
+    min-width: 280px;
+  }
+  
+  .project-image {
+    height: 240px;
+  }
+}
+
 @media (max-width: 768px) {
+  .projects-section {
+    padding: 80px 5%;
+  }
+  
   .card-content {
     flex-direction: column;
     padding: 1.5rem;
   }
   
+  .image-container {
+    min-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
   .project-image {
-    height: 250px;
+    height: 220px;
+    border-radius: 6px;
+  }
+  
+  .image-top-box {
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
   }
   
   .project-title {
@@ -168,9 +198,13 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+  .projects-section {
+    padding: 60px 5%;
+  }
+  
   .projects-section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   
   .project-card {
@@ -181,8 +215,46 @@
     padding: 1rem;
     gap: 1rem;
   }
+  
+  .project-image {
+    height: 200px;
+    border-radius: 4px;
+  }
+  
+  .image-top-box {
+    top: 8px;
+    right: 8px;
+    padding: 5px 10px;
+  }
+  
+  .category-badge {
+    font-size: 0.8rem;
+  }
 }
 
+@media (max-width: 400px) {
+  .projects-section {
+    padding: 50px 5%;
+  }
+  
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+  
+  .image-top-box {
+    top: 6px;
+    right: 6px;
+    padding: 4px 8px;
+  }
+  
+  .category-badge {
+    font-size: 0.75rem;
+  }
+}
 
 /* Add these styles to your existing Projects.css */
 

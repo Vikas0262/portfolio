@@ -27,7 +27,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 10%;
+    padding: 6rem 10%;
     min-height: 100vh;
     background: linear-gradient(to right, var(--color-bg-dark), var(--color-bg-darker));
     color: var(--color-text-primary);
@@ -197,6 +197,11 @@
     .hero {
       padding: 100px 5%;
     }
+  
+    .profile-image {
+      width: 380px;
+      height: 380px;
+    }
   }
   
   @media (max-width: 991px) {
@@ -213,6 +218,7 @@
   
     .description {
       max-width: 100%;
+      margin: 0 auto 2rem;
     }
   
     .social-icons {
@@ -220,12 +226,20 @@
     }
   
     .profile-image {
-      width: 280px;
-      height: 280px;
+      width: 320px;
+      height: 320px;
     }
-    .buttons{
+  
+    .buttons {
       flex-direction: column;
       align-items: center;
+      gap: 1rem;
+    }
+  
+    .btn {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
     }
   }
   
@@ -237,12 +251,22 @@
     .profession {
       font-size: 1.5rem;
     }
+    
+    .description {
+      font-size: 1rem;
+    }
+  
+    .profile-image {
+      width: 280px;
+      height: 280px;
+      border-width: 8px;
+    }
   }
   
   @media (max-width: 576px) {
-    .hero {
+    /* .hero {
       padding: 100px 5% 60px;
-    }
+    } */
   
     .name-heading {
       font-size: 2.2rem;
@@ -252,16 +276,46 @@
       font-size: 1.3rem;
     }
   
+    .intro-badge {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .profile-image {
+      width: 250px;
+      height: 250px;
+      border-width: 6px;
+    }
+  
+    .btn {
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .social-icons {
+      gap: 1rem;
+    }
+  
+    .icon {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .name-heading {
+      font-size: 2rem;
+    }
+    
+    .profession {
+      font-size: 1.2rem;
+    }
+    
     .profile-image {
       width: 230px;
       height: 230px;
     }
-  
-    .buttons {
-      flex-direction: column;
-    }
-  
+    
     .btn {
-      justify-content: center;
+      padding: 0.6rem 1.2rem;
     }
   }
