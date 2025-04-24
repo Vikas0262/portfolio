@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
+import { app } from "../Firebase.js";
+import { getDatabase, set, ref } from "firebase/database";
 
 const Contact = () => {
   const containerRef = useRef(null);
@@ -45,6 +47,19 @@ const Contact = () => {
         message: ''
       });
     }, 3000);
+
+
+    // Firebase code 
+    console.log(formData.name,formData.email,formData.subject,formData.message);
+
+    const db = getDatabase(app);
+    set(ref(db, "Name/" + formData.name), {
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    });
+    
+
   };
 
   return (
