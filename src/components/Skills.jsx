@@ -3,12 +3,12 @@ import { motion, useInView } from "framer-motion";
 import "./Skills.css";
 import htmlIcon from "../assets/Skills/HTML5.png";
 import cssIcon from "../assets/Skills/CSS3.png";
-// import jsIcon from "../assets/Skills/JavaScript.png";
+import jsIcon from "../assets/Skills/jsIcon.png";
 import reactIcon from "../assets/Skills/react.svg";
-// import mongoIcon from "../assets/Skills/MongoDB.png";
-import nextIcon from "../assets/Skills/Next.js.svg";
-// import nodeIcon from "../assets/Skills/Node.js.png";
-// import gitIcon from "../assets/Skills/Git.png";
+import mongodbIcon from "../assets/Skills/mongoodbIcon.png";
+import ExpressIcon from "../assets/Skills/expressIcon.png";
+import nodeIcon from "../assets/Skills/nodeIcon.png";
+import gitIcon from "../assets/Skills/gitIcon.png";
 import tailwindIcon from "../assets/Skills/Tailwind-CSS.png";
 import bootstrapIcon from "../assets/Skills/Bootstrap.png";
 import githubIcon from "../assets/Skills/GitHub.png";
@@ -17,30 +17,30 @@ import firebaseIcon from "../assets/Skills/Firebase.png";
 import materialuiIcon from "../assets/Skills/materialui.png";
 import nextjsIcon from "../assets/Skills/Next.js.svg";
 import pythonIcon from "../assets/Skills/Python.png";
-// import javaIcon from "../assets/Skills/Java.png";
+import javaIcon from "../assets/Skills/javaIcon.png";
 import cIcon from "../assets/Skills/C.png";
-// import javaIcon from "../assets/Skills/Java.png";
+import cppIcon from "../assets/Skills/cppIcon.png";
 
 const skills = [
   { name: "HTML5", icon: htmlIcon },
   { name: "CSS3", icon: cssIcon },
-//   { name: "JavaScript", icon: jsIcon },
-  { name: "React", icon: reactIcon },
-  { name: "Next.js", icon: nextIcon },
-//   { name: "Node.js", icon: nodeIcon },
-//   { name: "MongoDB", icon: mongoIcon },
-//   { name: "Java", icon: javaIcon },
-//   { name: "Git", icon: gitIcon },
-  { name: "Tailwind", icon: tailwindIcon },
+  { name: "JavaScript", icon: jsIcon },
+  { name: "React.js", icon: reactIcon },
+  { name: "Node.js", icon: nodeIcon },
+  { name: "Express.js", icon: ExpressIcon },
+  { name: "Tailwind-CSS", icon: tailwindIcon },
+  { name: "MongoDB", icon: mongodbIcon },
   { name: "Bootstrap", icon: bootstrapIcon },
+  { name: "Firebase", icon: firebaseIcon },
+  { name: "Git", icon: gitIcon },
   { name: "GitHub", icon: githubIcon },
   { name: "Figma", icon: figmaIcon },
   { name: "materialui", icon: materialuiIcon },
-  { name: "Firebase", icon: firebaseIcon },
   { name: "Next.Js", icon: nextjsIcon },
-//   { name: "Java", icon: javaIcon },
+  { name: "Java", icon: javaIcon },
   { name: "Python", icon: pythonIcon },
   { name: "C", icon: cIcon },
+  { name: "CPP", icon: cppIcon },
 ];
 
 const Skills = () => {
