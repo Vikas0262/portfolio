@@ -19,7 +19,7 @@ const Projects = () => {
     },
     {
       title: "TaskNext Website",
-      url: "https://add-your-task.vercel.app/",
+      url: "https://manage-yours-task.vercel.app/",
       description: "TaskNext is a modern task management web app built using the MERN stack. It helps users create, organize, and track tasks efficiently with smart filters and status control.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       image: TaskNext
