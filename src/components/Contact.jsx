@@ -2,11 +2,13 @@ import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
-import { app } from "../Firebase.js";
-import { getDatabase, set, ref } from "firebase/database";
+import { app } from '../Firebase.js';
+import { getDatabase, set, ref } from 'firebase/database';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const containerRef = useRef(null);
+  const formRef = useRef(null); // ✅ for emailjs
   const isInView = useInView(containerRef, { amount: 0.2, once: false });
 
   const [formData, setFormData] = useState({
@@ -31,13 +33,35 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    // Firebase
+    const db = getDatabase(app);
+    await set(ref(db, "Name/" + formData.name), {
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    });
+
+    // EmailJS
+    emailjs
+      .sendForm(
+        'service_1mknffg',
+        'template_9yuap3s',
+        formRef.current,
+        'NFnHTHYk6gCzKH4Jb'
+      )
+      .then(
+        () => {
+          console.log('Email sent successfully');
+        },
+        (error) => {
+          console.error('Email send error:', error);
+        }
+      );
 
     setIsSubmitting(false);
     setShowThankYou(true);
 
-    // Reset form after 3 seconds
+    // Reset form
     setTimeout(() => {
       setShowThankYou(false);
       setFormData({
@@ -47,19 +71,6 @@ const Contact = () => {
         message: ''
       });
     }, 3000);
-
-
-    // Firebase code 
-    console.log(formData.name,formData.email,formData.subject,formData.message);
-
-    const db = getDatabase(app);
-    set(ref(db, "Name/" + formData.name), {
-      email: formData.email,
-      subject: formData.subject,
-      message: formData.message
-    });
-    
-
   };
 
   return (
@@ -90,7 +101,6 @@ const Contact = () => {
                 <p>vikas.v6543@gmail.com</p>
               </div>
             </div>
-
             <div className="contact-item">
               <FaPhone className="contact-icon" />
               <div className="contact-text">
@@ -98,7 +108,6 @@ const Contact = () => {
                 <p>+91 8600149671</p>
               </div>
             </div>
-
             <div className="contact-item">
               <FaMapMarkerAlt className="contact-icon" />
               <div className="contact-text">
@@ -123,7 +132,7 @@ const Contact = () => {
 
         <div className="contact-form-container">
           <div className="form-background"></div>
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
             <div className="form-group">
               <input
                 type="text"
