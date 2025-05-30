@@ -10,7 +10,7 @@ const ProjectCard = ({ project, layout }) => {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <div className="card-content">
+      <div className="card-content bg-none">
         {/* Image with Top Box */}
         <div className="image-container">
           <img src={project.image} alt={project.title} className="project-image" />

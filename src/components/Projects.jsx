@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard.jsx';
 // import interactImage from '../assets/interact.jpg';
 import FurnishHub from '../assets/Project/FurnishHub.png'
 import TaskNext from '../assets/Project/TaskNext.png'
+import olp from '../assets/Project/olp.png'
 import "./Projects.css";
 
 const Projects = () => {
@@ -18,11 +19,18 @@ const Projects = () => {
       image: FurnishHub
     },
     {
-      title: "TaskNext Website",
+      title: "Task Manager Website",
       url: "https://manage-yours-task.vercel.app/",
       description: "TaskNext is a modern task management web app built using the MERN stack. It helps users create, organize, and track tasks efficiently with smart filters and status control.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       image: TaskNext
+    },
+    {
+      title: "Online Learning Platform",
+      url: "https://online-learning-platform-vikas.vercel.app/",
+      description: "Online E-Learning Platform is a MERN stack-based web app that enables users to browse, enroll, and learn through video courses. It offers secure authentication, progress tracking, and an admin dashboard for managing courses.",
+      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+      image: olp
     }
   ];
 
