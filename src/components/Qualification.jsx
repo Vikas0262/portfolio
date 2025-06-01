@@ -19,7 +19,7 @@ const QualificationDetails = {
         inst: "BCA",
         clg: "Sahyog College Of IT And Management Studies",
         addr: "Thane, Maharashtra",
-        disc1: "Completed my Graduation grade with 85%.",
+        disc1: "Completed my graduation grade with 85% excellence and dedication.",
         disc2: "",
     },
 }

@@ -20,6 +20,7 @@ import pythonIcon from "../assets/Skills/Python.png";
 import javaIcon from "../assets/Skills/javaIcon.png";
 import cIcon from "../assets/Skills/C.png";
 import cppIcon from "../assets/Skills/cppIcon.png";
+import postman from "../assets/Skills/Postman.png"
 
 const skills = [
   { name: "HTML5", icon: htmlIcon },
@@ -29,6 +30,7 @@ const skills = [
   { name: "Node.js", icon: nodeIcon },
   { name: "Express.js", icon: ExpressIcon },
   { name: "Tailwind-CSS", icon: tailwindIcon },
+  { name: "Postman", icon: postman },
   { name: "MongoDB", icon: mongodbIcon },
   { name: "Bootstrap", icon: bootstrapIcon },
   { name: "Firebase", icon: firebaseIcon },

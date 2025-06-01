@@ -17,10 +17,10 @@ function Home() {
         {/* <ThemeToggle /> */}
         <Navbar />
         <Hero />
-        <About />
         <Skills />
         <Projects />
         <Certifications />
+        <About />
         <Contact />
         <Footer />
         

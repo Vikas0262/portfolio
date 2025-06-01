@@ -7,14 +7,14 @@ import Aboutcomp from "./Aboutcomp.jsx";
 function About() {
   return (
    <>
-   <div id="About"  className="flex flex-col w-full h-fit px-6 md:py-10 md:px-40 mb-10 ">
+   <div id="About"  className="flex flex-col w-full h-fit px-6 md:py-10 md:px-[10%] mb-10 ">
    <motion.h1
         variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.1 }}
         
-        className="font-fira text-1xl md:text-4xl py-8 w-full h-10 gap-4 text-slate-100 font-light flex items-center"
+        className="text-xl md:text-4xl py-8 w-full h-10 gap-4 text-slate-100 flex items-center"
       >
         {`<About/>`}{" "}
         <div className=" w-60 md:w-[80%] h-[0.1rem] bg-slate-50"></div>

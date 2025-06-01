@@ -47,7 +47,7 @@ For me, every day is a chance to innovate, learn, and make a meaningful impact!`
                 delay: i / 50,
               }}
               key={i}
-              className="font-ubantu md:text-xl text-base font-normal tracking-tighter md:font-normal"
+              className="md:text-xl text-base tracking-tighter"
             >
               {el}{" "}
             </motion.p>
