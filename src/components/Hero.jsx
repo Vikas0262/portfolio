@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaDownload, FaLinkedin, FaGithub, FaCode, FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import './Hero.css';
 import profile from '../assets/hero-profile.jpeg';
-import resumeUrl from '../assets/Resume/Vikas_Vishwakarma_Resume.pdf'
+// import resumeUrl from '../assets/Resume/Vikas_Vishwakarma.pdf'
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,6 +10,8 @@ const Hero = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
+
+  const resumeUrl = 'https://drive.google.com/file/d/1qIwRoYeOKcak_1cDig9ziL4eRyqYwnrq/view?usp=sharing'
 
   useEffect(() => {
     setIsVisible(true);
@@ -76,7 +78,8 @@ const Hero = () => {
         </p>
 
         <div className="buttons">
-          <button 
+          {/* <button 
+            
             className="btn primary-btn" 
             onClick={handleDownload}
             disabled={isDownloading}
@@ -85,7 +88,10 @@ const Hero = () => {
             <span className="btn-text">
               {isDownloading ? 'Downloading...' : 'Download Resume'}
             </span>
-          </button>
+            
+          </button> */}
+
+          <a href={resumeUrl} className='btn primary-btn' target='__blank'>Download Resume</a>
         </div>
 
         <div className="social-icons">

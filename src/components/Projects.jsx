@@ -5,11 +5,12 @@ import ProjectCard from './ProjectCard.jsx';
 import FurnishHub from '../assets/Project/FurnishHub.png'
 import TaskManage from '../assets/Project/TaskManager.png'
 import olp from '../assets/Project/olp.png'
+import aiImage from '../assets/Project/aiImage.png'
 import "./Projects.css";
 
 const Projects = () => {
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { amount: 0.2, once: false });
+  const isInView = useInView(containerRef, { amount: 0.1, once: true });
   const projects = [
     {
       title: "FurnishHub - E-Commerce",
@@ -25,35 +26,35 @@ const Projects = () => {
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       image: TaskManage
     },
-    {
-      title: "AiInterview",
-      url: "https://manage-yours-task.vercel.app/",
-      description: "AIInterview is a voice-enabled platform that simulates real interview experiences using AI. Users can select interview types, answer AI-asked questions by speaking, and get instant feedback. It also includes quizzes, scheduling, and progress tracking for complete preparation.",
-      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-      image: TaskManage
-    },
+    // {
+    //   title: "AiInterview",
+    //   url: "https://manage-yours-task.vercel.app/",
+    //   description: "AIInterview is a voice-enabled platform that simulates real interview experiences using AI. Users can select interview types, answer AI-asked questions by speaking, and get instant feedback. It also includes quizzes, scheduling, and progress tracking for complete preparation.",
+    //   tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    //   image: aiImage
+    // },
     {
       title: "Online Learning Platform",
       url: "https://online-learning-platform-vikas.vercel.app/",
       description: "Online E-Learning Platform is a MERN stack-based web app that enables users to browse, enroll, and learn through video courses. It offers secure authentication, progress tracking, and an admin dashboard for managing courses.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       image: olp
-    },
-    {
-      title: "NewsHub",
-      url: "https://online-learning-platform-vikas.vercel.app/",
-      description: "NewsHub is a responsive news website where users can view the latest updates, browse by category, and search articles easily.",
-      tags: ["HTML", "CSS", "JavaScript"],
-      image: olp
     }
+    // {
+    //   title: "NewsHub",
+    //   url: "https://online-learning-platform-vikas.vercel.app/",
+    //   description: "NewsHub is a responsive news website where users can view the latest updates, browse by category, and search articles easily.",
+    //   tags: ["HTML", "CSS", "JavaScript"],
+    //   image: olp
+    // }
   ];
 
   return (
     <section className="projects-section" id="projects" ref={containerRef}>
       <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.6 }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+        transition={{ duration: 0.4 }}
       >
         <span>&lt;Projects/&gt;</span>
       </motion.h2>
@@ -61,7 +62,7 @@ const Projects = () => {
       <motion.hr
         initial={{ width: 0 }}
         animate={isInView ? { width: "80%" } : { width: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
       />
 
       <div className="projects-container">

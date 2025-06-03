@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
-import { app } from '../Firebase.js';
 import { getDatabase, set, ref } from 'firebase/database';
 import emailjs from '@emailjs/browser';
 
@@ -34,12 +33,12 @@ const Contact = () => {
     setIsSubmitting(true);
 
     // Firebase
-    const db = getDatabase(app);
-    await set(ref(db, "Name/" + formData.name), {
-      email: formData.email,
-      subject: formData.subject,
-      message: formData.message
-    });
+    // const db = getDatabase(app);
+    // await set(ref(db, "Name/" + formData.name), {
+    //   email: formData.email,
+    //   subject: formData.subject,
+    //   message: formData.message
+    // });
 
     // EmailJS
     emailjs
@@ -51,7 +50,7 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log('Email sent successfully');
+          // console.log('Email sent successfully');
         },
         (error) => {
           console.error('Email send error:', error);

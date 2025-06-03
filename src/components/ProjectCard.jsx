@@ -5,10 +5,10 @@ const ProjectCard = ({ project, layout }) => {
   return (
     <motion.div 
       className={`project-card ${layout}-layout`}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+      viewport={{ once: true, margin: '0px 0px -100px 0px' }}
     >
       <div className="card-content bg-none">
         {/* Image with Top Box */}

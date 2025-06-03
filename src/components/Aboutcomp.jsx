@@ -34,7 +34,7 @@ For me, every day is a chance to innovate, learn, and make a meaningful impact!`
 
         <div
           id="aboutcontent"
-          className="mt-4 text-justify w-full h-fit flex flex-wrap gap-2 text-slate-400"
+          className="mt-4 w-full h-fit flex flex-wrap gap-2 text-[#d1d1d1] leading-relaxed text-base transition-colors duration-300 ease-in-out"
           role="article"
         >
           {text.map((el, i) => (
@@ -47,7 +47,7 @@ For me, every day is a chance to innovate, learn, and make a meaningful impact!`
                 delay: i / 50,
               }}
               key={i}
-              className="md:text-xl text-base tracking-tighter"
+              className=""
             >
               {el}{" "}
             </motion.p>

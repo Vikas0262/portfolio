@@ -9,7 +9,7 @@ const QualificationDetails = {
         inst: "AKTU",
         clg: "Galgotias College of Engineering and Technology",
         addr: "Greater Noida, Uttar Pradesh",
-        disc2: "Currently pursuing a Master of Computer Applications (MCA) and learning full-stack development. Passionate about building clean, efficient web apps using JavaScript, React, Node.js, and MongoDB.",
+        disc2: "Completed Master of Computer Applications (MCA) and learning full-stack development. Passionate about building clean, efficient web apps using JavaScript, React, Node.js, and MongoDB.",
 
         cur: true,
     },
@@ -71,27 +71,6 @@ function Qualification() {
                         role="listitem"
                     />
                 ))}
-            </div>
-
-            {/* Hidden SEO content */}
-            <div className="sr-only">
-                <h2>Education History</h2>
-                <div itemScope itemType="http://schema.org/EducationEvent">
-                    <h3>Higher Secondary Education</h3>
-                    <p itemProp="name">Daffodils Public School</p>
-                    <p itemProp="location">Mirzapur, Uttar Pradesh</p>
-                    <p itemProp="startDate">2020</p>
-                    <p itemProp="endDate">2021</p>
-                    <p itemProp="description">Completed 12th grade with 91% in Science Stream</p>
-                </div>
-                <div itemScope itemType="http://schema.org/EducationEvent">
-                    <h3>Bachelor of Technology</h3>
-                    <p itemProp="name">Galgotias College of Engineering and Technology</p>
-                    <p itemProp="location">Noida, Uttar Pradesh</p>
-                    <p itemProp="startDate">2022</p>
-                    <p itemProp="endDate">2026</p>
-                    <p itemProp="description">Computer Science Engineering with specialization in Artificial Intelligence and Machine Learning</p>
-                </div>
             </div>
         </section>
     );
