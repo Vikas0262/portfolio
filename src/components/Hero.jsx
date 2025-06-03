@@ -95,22 +95,22 @@ const Hero = () => {
         </div>
 
         <div className="social-icons">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/vikas-vishwakarma-9a2343244/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="icon" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Vikas0262" target="_blank" rel="noopener noreferrer">
             <FaGithub className="icon" />
           </a>
-          <a href="#portfolio">
+          {/* <a href="#portfolio">
             <FaCode className="icon" />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="icon" />
-          </a>
-          <a href="mailto:contact@example.com">
+          </a> */}
+          <a href="mailto:vikas.v6543@gmail.com">
             <FaEnvelope className="icon" />
           </a>
-          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/8600149671" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp className="icon" />
           </a>
         </div>
