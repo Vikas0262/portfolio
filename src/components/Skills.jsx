@@ -21,6 +21,10 @@ import javaIcon from "../assets/Skills/javaIcon.png";
 import cIcon from "../assets/Skills/C.png";
 import cppIcon from "../assets/Skills/cppIcon.png";
 import postman from "../assets/Skills/Postman.png"
+import docker from "../assets/Skills/docker.svg"
+import aws from "../assets/Skills/aws.png"
+import ts from "../assets/Skills/ts.png"
+import nestjs from "../assets/Skills/nestjs.svg"
 
 const skills = [
   { name: "HTML5", icon: htmlIcon },
@@ -29,20 +33,24 @@ const skills = [
   { name: "React.js", icon: reactIcon },
   { name: "Node.js", icon: nodeIcon },
   { name: "Express.js", icon: ExpressIcon },
-  { name: "Tailwind-CSS", icon: tailwindIcon },
-  { name: "Postman", icon: postman },
   { name: "MongoDB", icon: mongodbIcon },
-  { name: "Bootstrap", icon: bootstrapIcon },
-  { name: "Firebase", icon: firebaseIcon },
   { name: "Git", icon: gitIcon },
   { name: "GitHub", icon: githubIcon },
-  { name: "Figma", icon: figmaIcon },
-  { name: "materialui", icon: materialuiIcon },
+  { name: "TypeScript", icon: ts },
   { name: "Next.Js", icon: nextjsIcon },
-  { name: "Java", icon: javaIcon },
-  { name: "Python", icon: pythonIcon },
+  { name: "Tailwind-CSS", icon: tailwindIcon },
+  { name: "Firebase", icon: firebaseIcon },
+  { name: "Bootstrap", icon: bootstrapIcon },
+  { name: "Figma", icon: figmaIcon },
+  { name: "Postman", icon: postman },
+  { name: "materialui", icon: materialuiIcon },
   { name: "C", icon: cIcon },
   { name: "CPP", icon: cppIcon },
+  { name: "Java", icon: javaIcon },
+  { name: "Python", icon: pythonIcon },
+  { name: "Docker", icon: docker },
+  { name: "AWS", icon: aws },
+  { name: "Nest.js", icon: nestjs },
 ];
 
 const Skills = () => {
