@@ -76,7 +76,7 @@ const Skills = () => {
       <motion.h3
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
       >
         Technologies I Work With
       </motion.h3>
@@ -90,7 +90,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 50, scale: 0.8 }}
               animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 50, scale: 0.8 }}
               transition={{ 
-                duration: 0.8,
+                duration: 0.6,
                 ease: [0.16, 1, 0.3, 1], // Custom easing for more bounce
                 delay: index * 0.08       // Faster stagger
               }}

@@ -32,7 +32,7 @@
   border: none;
   height: 2px;
   background: linear-gradient(to right, transparent, rgba(108, 99, 255, 0.6), transparent);
-  transition: width 1s ease-out 0.2s;
+  margin-bottom: 5rem;
 }
 
 .projects-section hr.animate {
@@ -135,15 +135,46 @@
 }
 
 .tech-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(108, 99, 255, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-tag:hover {
+  background: rgba(108, 99, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.tech-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tech-fallback {
   color: #6c63ff;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  text-align: center;
+  padding: 0 4px;
 }
 
 .separator {
   color: #555;
   font-weight: 300;
+  margin: 0 2px;
 }
 
 @media (max-width: 1200px) {

@@ -196,7 +196,7 @@
   /* Responsive Design */
   @media (max-width: 1200px) {
     .hero {
-      padding: 6rem 5%;
+      padding: 4rem 5%;
     }
   
     .profile-image {
@@ -209,7 +209,7 @@
     .hero {
       flex-direction: column;
       text-align: center;
-      padding: 5rem 5%;
+      padding: 4rem 5%;
     }
   
     .hero-content {

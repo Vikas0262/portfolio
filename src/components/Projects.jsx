@@ -1,12 +1,13 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import ProjectCard from './ProjectCard.jsx';
-// import interactImage from '../assets/interact.jpg';
-import FurnishHub from '../assets/Project/FurnishHub.png'
-import TaskManage from '../assets/Project/TaskManager.png'
-import olp from '../assets/Project/olp.png'
-import aiImage from '../assets/Project/aiImage.png'
+import FurnishHub from '../assets/Project/FurnishHub.png';
+import TaskManage from '../assets/Project/TaskManager.png';
+import olp from '../assets/Project/olp.png';
+import aiImage from '../assets/Project/aiImage.png';
 import "./Projects.css";
+
+// Skill icons are now referenced by path in ProjectCard
 
 const Projects = () => {
   const containerRef = useRef(null);
@@ -26,13 +27,13 @@ const Projects = () => {
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       image: TaskManage
     },
-    // {
-    //   title: "AiInterview",
-    //   url: "https://manage-yours-task.vercel.app/",
-    //   description: "AIInterview is a voice-enabled platform that simulates real interview experiences using AI. Users can select interview types, answer AI-asked questions by speaking, and get instant feedback. It also includes quizzes, scheduling, and progress tracking for complete preparation.",
-    //   tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-    //   image: aiImage
-    // },
+    {
+      title: "AiInterview",
+      url: "https://ai-interview-vikas.vercel.app/",
+      description: "AIInterview is a voice-enabled platform that simulates real interview experiences using AI. Users can select interview types, answer AI-asked questions by speaking, and get instant feedback. It also includes quizzes, scheduling, and progress tracking for complete preparation.",
+      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+      image: aiImage
+    },
     {
       title: "Online Learning Platform",
       url: "https://online-learning-platform-vikas.vercel.app/",
@@ -44,7 +45,11 @@ const Projects = () => {
     //   title: "NewsHub",
     //   url: "https://online-learning-platform-vikas.vercel.app/",
     //   description: "NewsHub is a responsive news website where users can view the latest updates, browse by category, and search articles easily.",
-    //   tags: ["HTML", "CSS", "JavaScript"],
+    //   tags: [
+    //     { name: "HTML5", icon: htmlIcon },
+    //     { name: "CSS3", icon: cssIcon },
+    //     { name: "JavaScript", icon: jsIcon }
+    //   ],
     //   image: olp
     // }
   ];
@@ -58,18 +63,18 @@ const Projects = () => {
       >
         <span>&lt;Projects/&gt;</span>
       </motion.h2>
-      
+
       <motion.hr
         initial={{ width: 0 }}
-        animate={isInView ? { width: "80%" } : { width: 0 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
+        animate={{ width: isInView ? "80%" : 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
       />
 
       <div className="projects-container">
         {projects.map((project, index) => (
-          <ProjectCard 
-            key={project.title} 
-            project={project} 
+          <ProjectCard
+            key={project.title}
+            project={project}
             layout={index % 2 === 0 ? 'left' : 'right'}
           />
         ))}

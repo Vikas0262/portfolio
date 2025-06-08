@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaHeart, FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaArrowUp } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaArrowUp, FaWhatsapp } from 'react-icons/fa';
 import './Footer.css';
+
 // import { Link } from 'react-scroll';
 const Footer = () => {
   const scrollToTop = () => {
@@ -24,23 +25,14 @@ const Footer = () => {
           </div>
 
           <div className="footer-links">
-            {/* <div className="footer-section">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skill" className='cursor-pointer'><Link to="skills" smooth={true} duration={500}>Skills</Link></a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div> */}
-
+            
             <div className="footer-section">
               <h4>Services</h4>
               <ul>
-                <li><a href="#services">Web Development</a></li>
-                <li><a href="#services">UI/UX Design</a></li>
-                <li><a href="#services">Frontend Development</a></li>
-                <li><a href="#services">Responsive Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Frontend Development</a></li>
+                <li><a href="#">Responsive Design</a></li>
               </ul>
             </div>
 
@@ -57,25 +49,21 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="social-links">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaLinkedin />
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaGithub />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaInstagram />
-            </a>
-            <a href="mailto:contact@vikasdev.com" className="social-link">
-              <FaEnvelope />
-            </a>
-          </div>
+                    <a href="https://www.linkedin.com/in/vikas-vishwakarma-9a2343244/" target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin className="icon" />
+                    </a>
+                    <a href="https://github.com/Vikas0262" target="_blank" rel="noopener noreferrer">
+                      <FaGithub className="icon" />
+                    </a>
+                    <a href="mailto:vikas.v6543@gmail.com">
+                      <FaEnvelope className="icon" />
+                    </a>
+                    <a href="https://wa.me/8600149671" target="_blank" rel="noopener noreferrer">
+                      <FaWhatsapp className="icon" />
+                    </a>
+                  </div>
 
           <div className="copyright">
-            <p>
-              {/* Made with <FaHeart className="heart-icon" /> by{" "} */}
-              {/* <a href="#home" className="highlight">Vikas Vishwakarma</a> */}
-            </p>
             <p>© {currentYear} All rights reserved.</p>
           </div>
 
