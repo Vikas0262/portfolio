@@ -5,14 +5,14 @@ import 'react-tooltip/dist/react-tooltip.css';
 
 // Import all skill icons
 const skillIcons = {
-  'React.js': '/src/assets/skills/react.svg',
-  'Node.js': '/src/assets/skills/nodeIcon.png',
-  'Express.js': '/src/assets/skills/expressIcon.png',
-  'MongoDB': '/src/assets/skills/mongoodbIcon.png',
-  'Tailwind CSS': '/src/assets/skills/Tailwind-CSS.png',
-  'JavaScript': '/src/assets/skills/jsIcon.png',
-  'HTML': '/src/assets/skills/HTML5.png',
-  'CSS': '/src/assets/skills/CSS3.png'
+  'React.js': 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560493/react_ifzoo3.svg',
+  'Node.js': 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560487/nodeIcon_qlyyab.png',
+  'Express.js': 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560471/expressIcon_kxbczc.png',
+  'MongoDB': 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560484/mongoodbIcon_dlabjx.png',
+  'Tailwind CSS': 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560493/Tailwind-CSS_i0xcrj.png',
+  'JavaScript': 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560480/jsIcon_j74v6l.png',
+  'HTML': 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560478/HTML5_n2y9e7.png',
+  'CSS': 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560470/CSS3_yiyvj1.png'
 };
 
 const ProjectCard = ({ project, layout }) => {
