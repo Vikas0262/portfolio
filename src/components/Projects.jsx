@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard.jsx';
 import FurnishHub from '../assets/Project/FurnishHub.png';
 import TaskManage from '../assets/Project/TaskManager.png';
 import olp from '../assets/Project/olp.png';
-import aiImage from '../assets/Project/aiImage.png';
+// import aiImage from '../assets/Project/aiImage.png';
 import "./Projects.css";
 
 // Skill icons are now referenced by path in ProjectCard
@@ -27,13 +27,13 @@ const Projects = () => {
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       image: TaskManage
     },
-    {
-      title: "AiInterview",
-      url: "https://ai-interview-vikas.vercel.app/",
-      description: "AIInterview is a voice-enabled platform that simulates real interview experiences using AI. Users can select interview types, answer AI-asked questions by speaking, and get instant feedback. It also includes quizzes, scheduling, and progress tracking for complete preparation.",
-      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-      image: aiImage
-    },
+    // {
+    //   title: "AiInterview",
+    //   url: "https://ai-interview-vikas.vercel.app/",
+    //   description: "AIInterview is a voice-enabled platform that simulates real interview experiences using AI. Users can select interview types, answer AI-asked questions by speaking, and get instant feedback. It also includes quizzes, scheduling, and progress tracking for complete preparation.",
+    //   tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    //   image: aiImage
+    // },
     {
       title: "Online Learning Platform",
       url: "https://online-learning-platform-vikas.vercel.app/",
