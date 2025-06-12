@@ -50,7 +50,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📬 Contact
 
-- Email: your.email@example.com
+- Email: vikas.v6543@gmail.com
 - LinkedIn: [Vikas LinkedIn Profile](https://www.linkedin.com/in/vikas-vishwakarma-9a2343244/)
 - GitHub: [@Vikas0262](https://github.com/vikas0262)
 
