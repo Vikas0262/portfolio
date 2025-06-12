@@ -1,67 +1,59 @@
-# <div align="center">
-#   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=Hi+👋+I'm+Vikas+Vishwakarma" alt="Typing SVG" />
-# </div>
+# My Portfolio
 
-<div align="center">
-  <a href="#">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=Full+Stack+Developer;UI%2FUX+Enthusiast;Problem+Solver" alt="Typing SVG" />
-  </a>
-</div>
+Welcome to my personal portfolio website! This is a showcase of my work, skills, and experience as a developer.
 
----
+## 🚀 Features
 
-## 🚀 About Me
+- Responsive design that works on all devices
+- Modern UI with smooth animations
+- Project showcase with details and links
+- Contact information and social media links
+- Easy customization and theming
 
-```javascript
-const vikas = {
-  pronouns: "he" | "him",
-  code: ["JavaScript", "Python"],
-  askMeAbout: ["web dev", "tech", "photography"],
-  technologies: {
-    frontend: ["React", "Next.js", "Tailwind CSS"],
-    backend: ["Node.js", "Express"],
-    database: ["MongoDB", "Firebase"]
-  }
-};
-```
+## 🛠️ Technologies Used
 
----
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion (for animations)
+- React Icons
 
-## 🛠️ Tech Stack
+## 📦 Installation
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,js,html,css,tailwind,nodejs,express,mongodb,firebase,git,github,vscode" />
-</p>
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
----
+## 🎨 Customization
 
-## 📊 GitHub Stats
+- Update your personal information in the `src/data` directory
+- Add/remove projects in the projects data file
+- Modify styles in the Tailwind configuration file
+- Update theme colors in `tailwind.config.js`
 
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Vikas0262&show_icons=true&theme=radical" />
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Vikas0262&theme=radical" />
-</div>
+## 📝 License
 
----
+This project is open source and available under the [MIT License](LICENSE).
 
-## 📫 Let's Connect
+## 📬 Contact
 
-<p align="center">
-  <a href="mailto:your.email@example.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://linkedin.com/in/your-profile">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/Vikas0262">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-</p>
+- Email: your.email@example.com
+- LinkedIn: [Vikas LinkedIn Profile](https://www.linkedin.com/in/vikas-vishwakarma-9a2343244/)
+- GitHub: [@Vikas0262](https://github.com/vikas0262)
 
 ---
 
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Vikas0262&style=flat-square&color=blue" alt="Profile views"/>
-  
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=4000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=Thanks+for+visiting!+✌️;Let's+create+something+amazing+together!)](https://git.io/typing-svg)
-</div>
+✨ Made by Vikas Vishwakarma
