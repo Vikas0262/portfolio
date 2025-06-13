@@ -11,7 +11,7 @@ const Hero = () => {
   const [animate, setAnimate] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
 
-  const resumeUrl = 'https://drive.google.com/file/d/1qIwRoYeOKcak_1cDig9ziL4eRyqYwnrq/view?usp=sharing'
+  const resumeUrl = 'https://drive.google.com/file/d/1YWc34KMh7qEYYtYsLDml0E7p-oq9zlNj/view?usp=sharing'
 
   useEffect(() => {
     setIsVisible(true);
