@@ -72,7 +72,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - 🌐 **Portfolio**: [vikasvishwakarma](http://vikas-vishwakarma.vercel.app/)
 - 📧 **Email**: vikas.v6543@gmail.com
-- 💼 **LinkedIn**: [Vikas LinkedIn Profile](https://www.linkedin.com/in/vikas-vishwakarma-9a2343244/)
+- 💼 **LinkedIn**: [Vikas LinkedIn Profile](https://www.linkedin.com/in/vikasvishwakarma262/)
 - 💻 **GitHub**: [@Vikas0262](https://github.com/vikas0262)
 
 ---

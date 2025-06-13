@@ -117,13 +117,13 @@ const Contact = () => {
           </div>
 
           <div className="social-links">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://www.linkedin.com/in/vikasvishwakarma262/" target="_blank" rel="noopener noreferrer" className="social-link">
               <FaLinkedin />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://github.com/Vikas0262" target="_blank" rel="noopener noreferrer" className="social-link">
               <FaGithub />
             </a>
-            <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://wa.me/8600149671" target="_blank" rel="noopener noreferrer" className="social-link">
               <FaWhatsapp />
             </a>
           </div>

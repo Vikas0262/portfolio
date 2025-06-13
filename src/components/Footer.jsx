@@ -49,7 +49,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="social-links">
-                    <a href="https://www.linkedin.com/in/vikas-vishwakarma-9a2343244/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/vikasvishwakarma262/" target="_blank" rel="noopener noreferrer">
                       <FaLinkedin className="icon" />
                     </a>
                     <a href="https://github.com/Vikas0262" target="_blank" rel="noopener noreferrer">
