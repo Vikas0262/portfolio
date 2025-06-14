@@ -1,57 +1,34 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "./Skills.css";
-import htmlIcon from "../assets/Skills/HTML5.png";
-import cssIcon from "../assets/Skills/CSS3.png";
-import jsIcon from "../assets/Skills/jsIcon.png";
-import reactIcon from "../assets/Skills/react.svg";
-import mongodbIcon from "../assets/Skills/mongoodbIcon.png";
-import ExpressIcon from "../assets/Skills/expressIcon.png";
-import nodeIcon from "../assets/Skills/nodeIcon.png";
-import gitIcon from "../assets/Skills/gitIcon.png";
-import tailwindIcon from "../assets/Skills/Tailwind-CSS.png";
-import bootstrapIcon from "../assets/Skills/Bootstrap.png";
-import githubIcon from "../assets/Skills/GitHub.png";
-import figmaIcon from "../assets/Skills/Figma.png";
-import firebaseIcon from "../assets/Skills/Firebase.png";
-import materialuiIcon from "../assets/Skills/materialui.png";
-import nextjsIcon from "../assets/Skills/Next.js.svg";
-import pythonIcon from "../assets/Skills/Python.png";
-import javaIcon from "../assets/Skills/javaIcon.png";
-import cIcon from "../assets/Skills/C.png";
-import cppIcon from "../assets/Skills/cppIcon.png";
-import postman from "../assets/Skills/Postman.png"
-import docker from "../assets/Skills/docker.svg"
-import aws from "../assets/Skills/aws.png"
-import ts from "../assets/Skills/ts.png"
-import nestjs from "../assets/Skills/nestjs.svg"
 
 const skills = [
-  { name: "HTML5", icon: htmlIcon },
-  { name: "CSS3", icon: cssIcon },
-  { name: "JavaScript", icon: jsIcon },
-  { name: "React.js", icon: reactIcon },
-  { name: "Node.js", icon: nodeIcon },
-  { name: "Express.js", icon: ExpressIcon },
-  { name: "MongoDB", icon: mongodbIcon },
-  { name: "Git", icon: gitIcon },
-  { name: "GitHub", icon: githubIcon },
-  { name: "TypeScript", icon: ts },
-  { name: "Next.Js", icon: nextjsIcon },
-  { name: "Tailwind-CSS", icon: tailwindIcon },
-  { name: "Firebase", icon: firebaseIcon },
-  { name: "Bootstrap", icon: bootstrapIcon },
-  { name: "Figma", icon: figmaIcon },
-  { name: "Postman", icon: postman },
-  { name: "materialui", icon: materialuiIcon },
-  { name: "C", icon: cIcon },
-  { name: "CPP", icon: cppIcon },
-  { name: "Java", icon: javaIcon },
-  { name: "Python", icon: pythonIcon },
-  { name: "Docker", icon: docker },
-  { name: "AWS", icon: aws },
-  { name: "Nest.js", icon: nestjs },
+  { name: "HTML5", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560478/HTML5_n2y9e7.png" },
+  { name: "CSS3", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560470/CSS3_yiyvj1.png" },
+  { name: "JavaScript", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560480/jsIcon_j74v6l.png" },
+  { name: "React.js", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560493/react_ifzoo3.svg" },
+  { name: "Node.js", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560487/nodeIcon_qlyyab.png" },
+  { name: "Express.js", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560471/expressIcon_kxbczc.png" },
+  { name: "MongoDB", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560484/mongoodbIcon_dlabjx.png" },
+  { name: "Git", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560477/gitIcon_zxfjhe.png" },
+  { name: "GitHub", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560476/GitHub_prtxhz.png" },
+  { name: "TypeScript", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560494/ts_iftz3z.png" },
+  { name: "Next.Js", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560487/Next.js_wc6mvu.svg" },
+  { name: "Tailwind-CSS", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560493/Tailwind-CSS_i0xcrj.png" },
+  { name: "Firebase", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560471/Firebase_ici2vp.png" },
+  { name: "Bootstrap", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560469/Bootstrap_fqsrqk.png" },
+  { name: "Figma", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560471/Figma_sbkil5.png" },
+  { name: "Postman", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560488/Postman_xkdirg.png" },
+  { name: "Material UI", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560482/materialui_rzy6nk.png" },
+  { name: "C", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560470/C_zltmyq.png" },
+  { name: "CPP", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560471/cppIcon_azano9.png" },
+  { name: "Java", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560479/javaIcon_eakqle.png" },
+  { name: "Python", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560493/Python_d1wctn.png" },
+  { name: "Docker", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560469/docker_k3srqr.svg" },
+  { name: "AWS", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560470/aws_nqhlmh.png" },
+  { name: "Nest.js", icon: "https://res.cloudinary.com/dcgtq8vao/image/upload/v1749560487/Next.js_wc6mvu.svg" }
 ];
+
 
 const Skills = () => {
   const containerRef = useRef(null);
