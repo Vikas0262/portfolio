@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaDownload, FaLinkedin, FaGithub, FaCode, FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import './Hero.css';
-import profile from '../assets/hero-profile.jpeg';
+import profile from '../../public/hero-profile.jpeg';
 // import resumeUrl from '../assets/Resume/Vikas_Vishwakarma.pdf'
 
 const Hero = () => {
