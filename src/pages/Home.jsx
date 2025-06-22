@@ -8,7 +8,7 @@ import Contact from '../components/Contact.jsx'
 import Footer from '../components/Footer.jsx'
 import About from '../components/About.jsx'
 // import ThemeToggle from '../components/ThemeToggle.jsx'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async'
 
 function Home() {
   return (
@@ -29,9 +29,6 @@ function Home() {
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-
-
-        {/* // */}
 
         {/* Structured Data */}
         <script type="application/ld+json">{`
