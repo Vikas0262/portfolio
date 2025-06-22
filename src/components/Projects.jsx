@@ -16,6 +16,13 @@ const Projects = () => {
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750240452/FurnishHub_xdvppg.png'
     },
+     {
+        title: "AiInterview",
+        url: "https://ai-interview-vikas.vercel.app/",
+        description: "AIInterview is a voice-enabled platform that simulates real interview experiences using AI. Users can select interview types, answer AI-asked questions by speaking, and get instant feedback. It also includes quizzes, scheduling, and progress tracking for complete preparation.",
+        tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+        image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750240452/aiImage_iin3aa.png'
+      },
     {
       title: "Task Manager Website",
       url: "https://manage-yours-task.vercel.app/",
@@ -23,13 +30,7 @@ const Projects = () => {
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750240451/TaskManager_m1tlzl.png'
     },
-    //  {
-    //    title: "AiInterview",
-    //    url: "https://ai-interview-vikas.vercel.app/",
-    //    description: "AIInterview is a voice-enabled platform that simulates real interview experiences using AI. Users can select interview types, answer AI-asked questions by speaking, and get instant feedback. It also includes quizzes, scheduling, and progress tracking for complete preparation.",
-    //    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-    //    image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750240452/aiImage_iin3aa.png'
-    //  },
+     
     {
       title: "Online Learning Platform",
       url: "https://online-learning-platform-vikas.vercel.app/",
