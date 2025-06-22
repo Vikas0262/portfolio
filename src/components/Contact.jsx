@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
-import { getDatabase, set, ref } from 'firebase/database';
+// import { getDatabase, set, ref } from 'firebase/database';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
