@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import { HelmetProvider } from 'react-helmet-async';
+
 if (typeof window !== "undefined") {
   window.scrollTo(0, 0);
 }
@@ -16,8 +18,8 @@ if (navigator.userAgent === 'ReactSnap') {
 }
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <HelmetProvider> */}
+    <HelmetProvider>
       <App />
-    {/* </HelmetProvider> */}
+    </HelmetProvider>
   </StrictMode>,
 )

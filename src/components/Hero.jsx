@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaDownload, FaLinkedin, FaGithub, FaCode, FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import './Hero.css';
-import profile from '../../public/hero-profile.jpeg';
 // import resumeUrl from '../assets/Resume/Vikas_Vishwakarma.pdf'
 
 const Hero = () => {
@@ -9,7 +8,7 @@ const Hero = () => {
   const textArray = ["Code for Web", "Design UI/UX", "Build Solutions"];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
-  const [isDownloading, setIsDownloading] = useState(false);
+  // const [isDownloading, setIsDownloading] = useState(false);
 
   const resumeUrl = 'https://drive.google.com/file/d/1YWc34KMh7qEYYtYsLDml0E7p-oq9zlNj/view?usp=sharing'
 
@@ -29,31 +28,31 @@ const Hero = () => {
     return () => clearInterval(textInterval);
   }, []);
 
-  const handleDownload = () => {
-    setIsDownloading(true);
+  // const handleDownload = () => {
+  //   setIsDownloading(true);
     
-    try {
-      // Replace this path with your actual resume file path
-      const fileUrl = {resumeUrl}; // Assuming your file is in public folder
+  //   try {
+  //     // Replace this path with your actual resume file path
+  //     const fileUrl = {resumeUrl}; // Assuming your file is in public folder
       
-      // Create a temporary anchor element
-      const link = document.createElement('a');
-      link.href = fileUrl;
+  //     // Create a temporary anchor element
+  //     const link = document.createElement('a');
+  //     link.href = fileUrl;
       
-      // Set the download attribute with your desired filename
-      link.download = 'Vikas_Vishwakarma_Resume.pdf';
+  //     // Set the download attribute with your desired filename
+  //     link.download = 'Vikas_Vishwakarma_Resume.pdf';
       
-      // Append to the body, trigger click, then remove
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (error) {
-      console.error('Download failed:', error);
-      // Optionally show an error message to the user
-    } finally {
-      setIsDownloading(false);
-    }
-  };
+  //     // Append to the body, trigger click, then remove
+  //     document.body.appendChild(link);
+  //     link.click();
+  //     document.body.removeChild(link);
+  //   } catch (error) {
+  //     console.error('Download failed:', error);
+  //     // Optionally show an error message to the user
+  //   } finally {
+  //     setIsDownloading(false);
+  //   }
+  // };
 
   return (
     <section id='hero' className={`hero ${isVisible ? 'visible' : ''}`}>
@@ -119,7 +118,7 @@ const Hero = () => {
       {/* Right Image */}
       <div className="image-container">
         <img 
-          src={profile}
+          src="/hero-profile.jpeg"
           alt="Vikas Vishwakarma" 
           className="profile-image"
         />
