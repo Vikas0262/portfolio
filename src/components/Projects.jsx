@@ -21,34 +21,30 @@ const Projects = () => {
        url: "https://ai-interview-vikas.vercel.app/",
        description: "PrepIQ is a voice-enabled platform that simulates real interview experiences using AI. Users can select interview types, answer AI-asked questions by speaking, and get instant feedback. It also includes quizzes, scheduling, and progress tracking for complete preparation.",
        tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-       image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750240452/aiImage_iin3aa.png'
+       image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750860693/Screenshot_64_zk1nmv.png'
      },
     {
       title: "Task Manager Website",
       url: "https://manage-yours-task.vercel.app/",
       description: "Task Manager is a modern task management web app built using the MERN stack. It helps users create, organize, and track tasks efficiently with smart filters and status control.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-      image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750240451/TaskManager_m1tlzl.png'
+      image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750860987/Screenshot_65_dx70ll.png'
     },
      
     {
       title: "Online Learning Platform",
       url: "https://online-learning-platform-vikas.vercel.app/",
       description: "Online E-Learning Platform is a MERN stack-based web app that enables users to browse, enroll, and learn through video courses. It offers secure authentication, progress tracking, and an admin dashboard for managing courses.",
-      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+      tags: ["HTML", "CSS", "JavaScript" , "Node.js", "Express.js", "MongoDB"],
       image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750240452/olp_y5shki.png'
+    },
+    {
+      title: "UrbanFits",
+      url: "https://urbanfits-e-commarce-website.vercel.app/",
+      description: "UrbanFits is a modern e-commerce platform for exploring and buying clothing products. It features smooth navigation, cart, and secure checkout with a responsive design. Built using the latest web technologies for a fast and user-friendly experience.",
+      tags: ["HTML", "CSS", "JavaScript"],
+      image: 'https://res.cloudinary.com/dcgtq8vao/image/upload/v1750860204/Screenshot_63_ilcm0h.png'
     }
-    // {
-    //   title: "NewsHub",
-    //   url: "https://online-learning-platform-vikas.vercel.app/",
-    //   description: "NewsHub is a responsive news website where users can view the latest updates, browse by category, and search articles easily.",
-    //   tags: [
-    //     { name: "HTML5", icon: htmlIcon },
-    //     { name: "CSS3", icon: cssIcon },
-    //     { name: "JavaScript", icon: jsIcon }
-    //   ],
-    //   image: olp
-    // }
   ];
 
   return (
