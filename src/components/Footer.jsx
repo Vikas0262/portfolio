@@ -11,7 +11,6 @@ const Footer = () => {
     });
   };
 
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="footer">
@@ -29,21 +28,21 @@ const Footer = () => {
             <div className="footer-section">
               <h4>Services</h4>
               <ul>
-                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Full-Stack Development</a></li>
                 <li><a href="#">UI/UX Design</a></li>
-                <li><a href="#">Frontend Development</a></li>
+                {/* <li><a href="#">Frontend Development</a></li> */}
                 <li><a href="#">Responsive Design</a></li>
               </ul>
             </div>
 
-            <div className="footer-section">
+            {/* <div className="footer-section">
               <h4>Contact Info</h4>
               <ul className="contact-info">
                 <li>Mumbai, Maharashtra</li>
                 <li>vikas.v6543@gmail.com</li>
                 <li>+91 8600149671</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -64,7 +63,9 @@ const Footer = () => {
                   </div>
 
           <div className="copyright">
-            <p>© {currentYear} All rights reserved.</p>
+            <p className="copyright">
+          &copy; Designed and Developed by Vikas Vishwakarma <span className="heart-icon">❤️</span>
+        </p>
           </div>
 
           <button className="scroll-to-top" onClick={scrollToTop} aria-label="Scroll to top">
